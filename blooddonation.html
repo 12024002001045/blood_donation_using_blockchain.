@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain-based Blood Donation Registry</h1>
+        <div class="form-section">
+            <h2>Register as Donor</h2>
+            <input type="text" id="donorName" placeholder="Name">
+            <input type="text" id="donorBloodType" placeholder="Blood Type (A+/B-/O+ etc.)">
+            <input type="text" id="donorContact" placeholder="Contact">
+            <button onclick="registerDonor()">Register Donor</button>
+        </div>
+        
+        <div class="form-section">
+            <h2>Register as Recipient</h2>
+            <input type="text" id="recipientName" placeholder="Name">
+            <input type="text" id="recipientBloodType" placeholder="Blood Type (A+/B-/O+ etc.)">
+            <input type="text" id="recipientContact" placeholder="Contact">
+            <button onclick="registerRecipient()">Register Recipient</button>
+        </div>
+        
+        <div class="list-section">
+            <h2>Registered Donors</h2>
+            <ul id="donorList"></ul>
+        </div>
+        
+        <div class="list-section">
+            <h2>Registered Recipients</h2>
+            <ul id="recipientList"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
